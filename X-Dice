@@ -1,0 +1,12 @@
+import random
+
+import time
+
+counter=0
+
+while counter <=29:
+    dice=random.randint(1,6)
+    counter=counter+1
+    print("counter:",counter)
+    print(dice)
+    time.sleep(0.5)

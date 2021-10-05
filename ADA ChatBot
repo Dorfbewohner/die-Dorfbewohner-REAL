@@ -1,0 +1,38 @@
+import time
+name=input("Wie lautet ihr name:\n")
+while len(name)<=0:
+    name = input("Bitte geben Sie erneut Ihren Namen ein: ")
+    
+alter=input("Wie alt sind Sie?\n")
+while len(alter)<=0:
+    alter=input("Bitte geben Sie erneut Ihre Alter ein:")
+else:
+    print(alter,"Ist schon sehr alt, aber ich freue mich das du da bist!", name)
+import time
+time.sleep(2)
+bereit=input("Als nächstes darfst du nur mit Ja/Nein antworten, Verstanden?:\n")
+if bereit.lower() == "ja":print("Dann fangen wir mal an!")
+else:
+        print("dann bist du nicht gemacht hierfür.")
+        exit()
+
+bereit=input("Magst du Programmieren?\n")
+if bereit.lower()== "ja":print("Super! dann kannst du dich gut um mich kümmern.")
+else:
+    print("Dann bleib dran! es wird Spaßiger.")
+time.sleep(1)
+
+bereit=input("Schreibst du gerne mit mir?\n")
+if bereit.lower()=="ja":print("ich schreib auch gerne mit dir, auch wenn du bisschen Stinkst :)")
+else:
+    print("okay schade... wir machen trotzdem mal weiter!")
+time.sleep(2)
+    
+bereit=input("Hast du Haustiere?\n")
+if bereit.lower()=="ja":print("ich liebe Haustiere. Ich habe",name,"als Haustier.")
+else: print("Menschen sind die besten Haustiere.")
+time.sleep(2)
+bereit=input("Sollen wir das hier beenden, ich habe noch etwas zutun.\n")
+if bereit.lower()=="ja":print("okay, ich weiß ja wo du wohnst, bis dann!",name)
+else:print("Schöne Antwort, leider muss ich trotzdem fort. Server sind gerade instabil.")
+     

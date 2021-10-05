@@ -1,0 +1,62 @@
+import time
+
+print("Hallo! und Willkommen zu einem Quiz! Du hast 30 Sekunden um 10 Fragen zu beantworten!")
+
+user=input("tippe START um loszulegen!\n")
+
+if user.lower()==("start"):print("Du hast 30sekunden in...")
+else: exit()
+
+print("3")
+
+time.sleep(1)
+print("2")
+
+time.sleep(1)
+print("1")
+
+time.sleep(1)
+print()
+
+print("GO!! Frage Nr.1:")
+
+frage=input("Wie viel ist 10+12?\n")
+if frage.lower()== "22":print("Richtig! Frage Nr.2:")
+else: print("Falsch! Verloren!"),exit()
+     
+
+frage=input("Wie viel ist 7+8+9?\n")
+if frage.lower()== "24":print("Richtig! Frage Nr.3:")
+else: print("Falsch! Verloren!"),exit()
+
+frage=input("Wie viel ist 40:8?")
+if frage.lower()== "5":print("Richtig! Frage Nr.4:")
+else: print("Falsch! Verloren!"),exit()
+
+frage=input("Wie viel ist 33:11?\n")
+if frage.lower()== "3":print("Richtig! Frage Nr.5:")
+else: print("Falsch! Verloren!"),exit()
+
+frage=input("Wie viel ist 123-12?\n")
+if frage.lower()== "111":print("Richtig! Frage Nr.6:")
+else: print("Falsch! Verloren!"),exit()
+    
+frage=input("Wie viel ist 56-88?\n")
+if frage.lower()== "-32":print("Richtig! Frage Nr.7:")
+else: print("Falsch! Verloren!"),exit()
+
+frage=input("Wie viel ist 2³?\n")
+if frage.lower()== "8":print("Richtig! Frage Nr.8:")
+else: print("Falsch! Verloren!"),exit()
+
+frage=input("Wie viel ist 5²?\n")
+if frage.lower()== "25":print("Richtig! Frage Nr.9:")
+else: print("Falsch! Verloren!"),exit()
+
+frage=input("Wie viel ist 5*(6-3)?\n")
+if frage.lower()== "15":print("Richtig! Frage Nr.10:")
+else: print("Falsch! Verloren!"),exit()
+
+frage=input("Wie viel ist 20:(2²)?\n")
+if frage.lower()== "5":print("Richtig! Du hast gewonnen!!! Dafür kreigst du ein keks :3")
+else: print("Falsch! Verloren!"),exit()

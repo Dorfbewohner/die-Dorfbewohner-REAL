@@ -1,0 +1,45 @@
+import time
+import webbrowser
+print ("Alle 90 Minuten gibt es eine Sanfte Pause")
+
+time.sleep(5400)
+print("90 Minuten sind Rum. Kleine Pause für dich!")
+time.sleep(2)
+webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+time.sleep(199)
+webbrowser.open("https://www.youtube.com/watch?v=daQw4w9WgXcQ")
+time.sleep(251)
+print("deine 7,5 Minütige Pause ist rum, ran an die arbeit!")
+
+time.sleep(5400)
+print("90 Minuten sind Rum. Kleine Pause für dich!")
+time.sleep(2)
+webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+time.sleep(199)
+webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+time.sleep(251)
+print("deine 7,5 Minütige Pause ist rum, ran an die arbeit!")
+
+time.sleep(5400)
+print("90 Minuten sind Rum. Kleine Pause für dich!")
+time.sleep(2)
+webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+time.sleep(199)
+webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+time.sleep(251)
+
+
+    
+print("deine 7,5 Minütige Pause ist rum, ran an die arbeit!")
+
+time.sleep(5400)
+print("90 Minuten sind Rum. Kleine Pause für dich!")
+time.sleep(2)
+webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+time.sleep(199)
+webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+time.sleep(251)
+print("deine 7,5 Minütige Pause ist rum, ran an die arbeit!")
+
+time.sleep(5400)
+print("Feierabend mein Guter.")

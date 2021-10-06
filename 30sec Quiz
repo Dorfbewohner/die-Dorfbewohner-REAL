@@ -41,8 +41,8 @@ frage=input("Wie viel ist 123-12?\n")
 if frage.lower()== "111":print("Richtig! Frage Nr.6:")
 else: print("Falsch! Verloren!"),exit()
     
-frage=input("Wie viel ist 56-88?\n")
-if frage.lower()== "-32":print("Richtig! Frage Nr.7:")
+frage=input("Wie viel ist 81-56?\n")
+if frage.lower()== "25":print("Richtig! Frage Nr.7:")
 else: print("Falsch! Verloren!"),exit()
 
 frage=input("Wie viel ist 2³?\n")

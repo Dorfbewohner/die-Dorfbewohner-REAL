@@ -1,6 +1,8 @@
 import random
 import time
 
+range = pirat=random.randint(1,100)
+
 print("arrrrrgghh ich bin Käptn Hook und denke an eine Zahl, wenn du sie errätst, kriegst du einen Schatz! du hast nur 6 Versuche.\n")
 time.sleep(0.5)
 Zahl=int(input("Wähle eine Zahl zwischen 1-100\n"))

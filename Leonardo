@@ -1,0 +1,10 @@
+import turtle
+import time
+wn=turtle.Screen()
+wn.bgcolor("black")
+
+leonardo=turtle.Turtle
+leonardo=turtle.color("green")
+
+turtle.forward(200)
+time.sleep(3)

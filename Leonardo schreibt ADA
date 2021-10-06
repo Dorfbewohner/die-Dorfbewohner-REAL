@@ -1,0 +1,45 @@
+import turtle
+import time
+
+wn=turtle.Screen()
+wn.bgcolor("black")
+
+leonardo=turtle.Turtle
+leonardo=turtle.color("black")
+
+turtle.width(0)
+turtle.backward(200)
+turtle.color("green")
+turtle.width(5)
+turtle.right(290)
+turtle.forward(250)
+turtle.right(140)
+turtle.forward(250)
+turtle.backward(125)
+turtle.right(110)
+turtle.forward(82)
+turtle.backward(82)
+turtle.left(110)
+turtle.forward(125)
+turtle.left(160)
+turtle.color("blue")
+turtle.forward(230)
+turtle.right(90)
+i = 180
+while i > 0:
+    turtle.forward(2)
+    turtle.right(1)
+    i = i - 1
+turtle.width(0)
+turtle.color("black")
+turtle.right(180)
+turtle.forward(88)
+turtle.width(5)
+turtle.color("red")
+turtle.right(-70)
+turtle.forward(250)
+turtle.right(140)
+turtle.forward(250)
+turtle.backward(125)
+turtle.right(110)
+turtle.forward(82)

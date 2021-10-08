@@ -4,7 +4,7 @@ import time
 
 counter=0
 
-while counter <=29:
+while counter <30:
     dice=random.randint(1,6)
     counter=counter+1
     print("counter:",counter)

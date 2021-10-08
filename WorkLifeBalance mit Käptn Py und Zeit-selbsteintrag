@@ -55,6 +55,6 @@ if rest>0:
     print("endspurt! noch",float(rest*60),"Minuten arbeiten und dann ist Feierabend!")
     time.sleep(rest)
 else:
-    print("keine Restzeit! Heute kein endspurt!")
+    print("keine Restzeit! Heute kein endspurt! los gehts!")
     time.sleep(1)
 print("Feierabend mein Guter! Wir sehen uns morgen wieder ;3")

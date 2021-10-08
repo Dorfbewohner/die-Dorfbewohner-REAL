@@ -4,132 +4,42 @@ import random
 from random import randint
 number=randint(1,100)
 tries=6
+counter=0
 
+print("Hallo, und Herzlich Willkommen zum 'Work-Life Balance' Programm mit einem Aufwärmspiel!")
+time.sleep(3)
+print("Du kriegst nach 90 min Arbeit immer eine kleine Pause! Jetzt erstmal ran an die Arbeit!\n")
 
-         
-time.sleep(5400)
-print("90 Minuten sind Rum. Kleine Pause für dich!")
-time.sleep(2)
-webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-time.sleep(199)
-webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-time.sleep(251)
-
-warm=input("Willst du ein Warm-Up?")
-if warm.lower()=="ja":
-
-    while tries>0:
-        print ("Du hast noch",tries,"Versuche")
-        guess=input("Wähle eine Zahl zwischen 1-100\n")
-        if int(guess)<number:
-            print("Zu niedrig du Holzbein!\n")
-            tries-=1
-        elif int(guess)>100:
-            print("ich sagte 1-100 du Landratte!\n")
-            break
-        elif int(guess)>number:
-            print("zu hoch mein Sohnemann.\n")
-            tries-=1
-        elif int(guess)==number: 
-            print("DU HAST DIE BEUTE ERLANGT!!! ARRRGGGGGHHH")
-            break
-    if tries ==0:
-        print("Du hast verloren du Jammerlappen, Versuch es nochmal!")
-else:
-    print("okay, kein Warm-Up!")
-print("deine 7,5 Minütige Pause ist rum, ran an die arbeit!")
-time.sleep(5400)
-print("90 Minuten sind Rum. Kleine Pause für dich!")
-time.sleep(2)
-webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-time.sleep(199)
-webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-time.sleep(251)
-warm=input("Willst du ein Warm-Up?")
-if warm.lower()=="ja":
-
-    while tries>0:
-        print ("Du hast noch",tries,"Versuche")
-        guess=input("Wähle eine Zahl zwischen 1-100\n")
-        if int(guess)<number:
-            print("Zu niedrig du Holzbein!\n")
-            tries-=1
-        elif int(guess)>100:
-            print("ich sagte 1-100 du Landratte!\n")
-            break
-        elif int(guess)>number:
-            print("zu hoch mein Sohnemann.\n")
-            tries-=1
-        elif int(guess)==number: 
-            print("DU HAST DIE BEUTE ERLANGT!!! ARRRGGGGGHHH")
-            break
-    if tries ==0:
-        print("Du hast verloren du Jammerlappen, Versuch es nochmal!")
-else:
-    print("okay, kein Warm-Up!")
-print("deine 7,5 Minütige Pause ist rum, ran an die arbeit!")
+while counter <4:
+    time.sleep(5400)
+    print("90 Minuten sind Rum. Kleine Pause für dich!\n")
+    webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    time.sleep(450)
+    print("deine 7,5 Minütige Pause ist rum!")
+    counter+=1
+    warm=input("Willst du ein Warm-Up bevor du wieder anfängst zu Arbeiten? 'Ja' oder 'Nein'?\n")
+    if warm.lower()=="ja":
+        print("Dann lass uns ein Spiel spielen! Ich denke an eine Zahl zwischen 1 und 100, und du musst sie erraten!")
+        time.sleep(2)
+        while tries>0:
+            print ("Du hast noch",tries,"Versuche")
+            guess=input("Wähle eine Zahl zwischen 1-100\n")
+            if int(guess)<number:
+                print("Zu niedrig du Holzbein!")
+                tries-=1
+            elif int(guess)>100:
+                print("ich sagte 1-100 du Landratte! 90min Arbeit für dich als Strafe! Los gehts!\n")
+                break
+            elif int(guess)>number:
+                print("zu hoch mein Sohnemann.")
+                tries-=1
+            elif int(guess)==number: 
+                print("DU HAST DIE BEUTE ERLANGT!!! ARRGGH! du gewinnst 90min Arbeit! Ran da!")
+                break
+        if tries ==0:
+            print("Du hast verloren du Jammerlappen! 90min Arbeit für dich! Los gehts!")
+    else:
+        print("okay, kein Warm-Up! Dann jetzt 90min Arbeit!")
 
 time.sleep(5400)
-print("90 Minuten sind Rum. Kleine Pause für dich!")
-time.sleep(2)
-webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-time.sleep(199)
-webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-time.sleep(251)
-warm=input("Willst du ein Warm-Up?")
-if warm.lower()=="ja":
-
-    while tries>0:
-        print ("Du hast noch",tries,"Versuche")
-        guess=input("Wähle eine Zahl zwischen 1-100\n")
-        if int(guess)<number:
-            print("Zu niedrig du Holzbein!\n")
-            tries-=1
-        elif int(guess)>100:
-            print("ich sagte 1-100 du Landratte!\n")
-            break
-        elif int(guess)>number:
-            print("zu hoch mein Sohnemann.\n")
-            tries-=1
-        elif int(guess)==number: 
-            print("DU HAST DIE BEUTE ERLANGT!!! ARRRGGGGGHHH")
-            break
-    if tries ==0:
-        print("Du hast verloren du Jammerlappen, Versuch es nochmal!")
-else:
-    print("okay, kein Warm-Up!")
-print("deine 7,5 Minütige Pause ist rum, ran an die arbeit!")
-
-time.sleep(5400)
-print("90 Minuten sind Rum. Kleine Pause für dich!")
-time.sleep(2)
-webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-time.sleep(199)
-webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-time.sleep(251)
-warm=input("Willst du ein Warm-Up?")
-if warm.lower()=="ja":
-
-    while tries>0:
-        print ("Du hast noch",tries,"Versuche")
-        guess=input("Wähle eine Zahl zwischen 1-100\n")
-        if int(guess)<number:
-            print("Zu niedrig du Holzbein!\n")
-            tries-=1
-        elif int(guess)>100:
-            print("ich sagte 1-100 du Landratte!\n")
-            break
-        elif int(guess)>number:
-            print("zu hoch mein Sohnemann.\n")
-            tries-=1
-        elif int(guess)==number: 
-            print("DU HAST DIE BEUTE ERLANGT!!! ARRRGGGGGHHH")
-            break
-    if tries ==0:
-        print("Du hast verloren du Jammerlappen, Versuch es nochmal!")
-else:
-    print("okay, kein Warm-Up!")
-print("deine 7,5 Minütige Pause ist rum, ran an die arbeit!")
-
-time.sleep(5400)
-print("Feierabend mein Guter.")
+print("Feierabend mein Guter! Wir sehen uns morgen wieder ;3")

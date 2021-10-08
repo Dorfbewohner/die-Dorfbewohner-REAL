@@ -13,13 +13,12 @@ work=input("Wie viele Minuten möchtest du heute Arbeiten, bevor du eine Pause e
 work= float(work)*60
 pause= float(work)/15
 male= float(28800/(float(work)+float(pause)))
-print(work,pause,male)
 rest= float(28800%((float(work)+float(pause))*float(male)))
 print("okay! du wirdst",int(work/60),"minuten Arbeiten, und dafür dann jeweils",float(pause/60),"minuten Pause haben.")
 time.sleep(3)
 print("Das alles dann",int(male),"mal, und", float(rest*60),"min musst du am noch ende arbeitend durchziehen!")
 time.sleep(3)
-while male >0:
+while male >int(0):
     print("noch",int(male),"male Arbeiten, los gehen deine",int(work/60),"minuten arbeit!")
     time.sleep(work)
     print(int(work/60),"Minuten sind Rum. Kleine Pause für dich!\n")
@@ -50,7 +49,12 @@ while male >0:
             print("Du hast verloren du Jammerlappen!")
     else:
         print("okay, kein Warm-Up!")
+    time.sleep(1)
 
-print("endspurt! noch",float(rest*60),"Minuten arbeiten und dann ist Feierabend!")
-time.sleep(rest)
+if rest>0:
+    print("endspurt! noch",float(rest*60),"Minuten arbeiten und dann ist Feierabend!")
+    time.sleep(rest)
+else:
+    print("keine Restzeit! Heute kein endspurt!")
+    time.sleep(1)
 print("Feierabend mein Guter! Wir sehen uns morgen wieder ;3")

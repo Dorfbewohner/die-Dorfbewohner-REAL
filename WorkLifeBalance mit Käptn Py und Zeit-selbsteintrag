@@ -1,0 +1,56 @@
+import time
+import webbrowser
+import random
+from random import randint
+number=randint(1,100)
+tries=6
+#8Std-Arbeitstag=28800Sek:    Arbeit=27000Sek;    Pause=1800Sek
+print("Hallo, und Herzlich Willkommen zum 'Work-Life Balance' Programm mit einem Aufwärmspiel!")
+time.sleep(3)
+print("Du wirdst insgesamt 8 Std heute beschäftigt sein, und 30 Min davon werden deine Pause sein!")
+time.sleep(3)
+work=input("Wie viele Minuten möchtest du heute Arbeiten, bevor du eine Pause erhältst? Ich würde mindestens 15min vorschlagen!\n")
+work= float(work)*60
+pause= float(work)/15
+male= float(28800/(float(work)+float(pause)))
+print(work,pause,male)
+rest= float(28800%((float(work)+float(pause))*float(male)))
+print("okay! du wirdst",int(work/60),"minuten Arbeiten, und dafür dann jeweils",float(pause/60),"minuten Pause haben.")
+time.sleep(3)
+print("Das alles dann",int(male),"mal, und", float(rest*60),"min musst du am noch ende arbeitend durchziehen!")
+time.sleep(3)
+while male >0:
+    print("noch",int(male),"male Arbeiten, los gehen deine",int(work/60),"minuten arbeit!")
+    time.sleep(work)
+    print(int(work/60),"Minuten sind Rum. Kleine Pause für dich!\n")
+    webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    time.sleep(pause)
+    print("deine",float(pause/60) ,"Minütige Pause ist rum!")
+    male-=1
+    warm=input("Willst du ein Warm-Up bevor du wieder anfängst zu Arbeiten? 'Ja' oder 'Nein'?\n")
+    if warm.lower()=="ja":
+        print("Dann lass uns ein Spiel spielen! Ich denke an eine Zahl zwischen 1 und 100, und du musst sie erraten!")
+        time.sleep(2)
+        while tries>0:
+            print ("Du hast noch",tries,"Versuche")
+            guess=input("Wähle eine Zahl zwischen 1-100\n")
+            if int(guess)<number:
+                print("Zu niedrig du Holzbein!")
+                tries-=1
+            elif int(guess)>100:
+                print("ich sagte 1-100 du Landratte! Disqualifiziert!\n")
+                break
+            elif int(guess)>number:
+                print("zu hoch mein Sohnemann.")
+                tries-=1
+            elif int(guess)==number: 
+                print("DU HAST DIE BEUTE ERLANGT!!! ARRRRGGGHHHH")
+                break
+        if tries ==0:
+            print("Du hast verloren du Jammerlappen!")
+    else:
+        print("okay, kein Warm-Up!")
+
+print("endspurt! noch",float(rest*60),"Minuten arbeiten und dann ist Feierabend!")
+time.sleep(rest)
+print("Feierabend mein Guter! Wir sehen uns morgen wieder ;3")
